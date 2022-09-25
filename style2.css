@@ -1,0 +1,21 @@
+/* div p {
+    background-color: purple;
+    height: 30px;
+} */
+
+
+/* div>p {
+    background-color: purple;
+    height: 30px;
+} */
+
+
+/* div+p {
+    background-color: purple;
+    height: 30px;
+} */
+
+div~p {
+    background-color: purple;
+    height: 30px;
+}

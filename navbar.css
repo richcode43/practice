@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+nav {
+    background: #2c3e50;
+    height: 40px;
+}
+
+.logo {
+    font-size: 20px;
+    color: white;
+    padding: 7px 0 0 80px;
+}
+
+nav ul {
+    list-style: none;
+    float: right;
+    padding: 0;
+    margin: 0;
+    margin-right: 100px;
+    margin-top: -40px;
+}
+
+nav ul li {
+    display: inline-block;
+    /* background: red; */
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 0 20px;
+    display: block;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul li a:hover {
+    color: gray;
+}
+
+.dropdown {
+    visibility: hidden;
+    display: block;
+}
+
+i {
+    padding-left: 5px;
+    color: red;
+}

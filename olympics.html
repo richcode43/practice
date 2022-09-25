@@ -1,0 +1,138 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin: 200px;
+            position: absolute;
+        }
+        
+        .box {
+            width: 100px;
+            height: 100px;
+            /* float: left; */
+            font-family: "Inconsolata", monospace;
+            font-size: 28px;
+            box-sizing: border-box;
+            border: 10px solid black;
+            border-radius: 100%;
+            position: absolute;
+            /* margin-top: 10px; */
+        }
+        
+        .blue {
+            border-color: #0080cb;
+            z-index: 10;
+            left: 0;
+            top: 0;
+            z-index: 0;
+        }
+        
+        .yellow {
+            border-color: #FEB131;
+            left: 60px;
+            top: 40px;
+            z-index: -1;
+        }
+        
+        .yellow1 {
+            z-index: 1;
+            /* border-top-style: none;
+            border-right-style: none; */
+            clip-path: polygon(0 0, 100% 100%, 0 100%);
+        }
+        
+        .yellow2 {
+            z-index: -1;
+            /* border-left-style: inset;
+            border-bottom-style: none; */
+            clip-path: polygon(0 0, 100% 100%, 100% 0);
+        }
+        
+        .black {
+            border-color: black;
+            left: 120px;
+            top: 0px;
+        }
+        
+        .black1 {
+            z-index: -2;
+            /* border-right-style: none;
+            border-bottom-style: none; */
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+        }
+        
+        .black2 {
+            z-index: 0;
+            /* border-top-style: none;
+            border-left-style: none; */
+            clip-path: polygon(100% 0, 100% 100%, 0 100%);
+        }
+        
+        .green {
+            border-color: green;
+            left: 180px;
+            top: 40px;
+        }
+        
+        .green1 {
+            z-index: 1;
+            clip-path: polygon(0 0, 100% 100%, 0 100%);
+        }
+        
+        .green2 {
+            z-index: -1;
+            clip-path: polygon(0 0, 100% 100%, 100% 0);
+        }
+        
+        .red {
+            border-color: red;
+            left: 240px;
+            top: 0px;
+        }
+        
+        .red1 {
+            z-index: -2;
+            /* border-right-style: none;
+            border-bottom-style: none; */
+            clip-path: polygon(0 0, 100% 0, 0 100%);
+        }
+        
+        .red2 {
+            z-index: 0;
+            /* border-top-style: none;
+            border-left-style: none; */
+            clip-path: polygon(100% 100%, 100% 0, 0 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box blue"></div>
+        <div class="box yellow yellow1"></div>
+        <div class="box yellow yellow2"></div>
+        <div class="box black black1"></div>
+        <div class="box black black2"></div>
+        <div class="box green green1"></div>
+        <div class="box green green2"></div>
+        <div class="box red red1"></div>
+        <div class="box red red2"></div>
+    </div>
+
+
+    <!-- <div class="logo">
+        <div class="ring blue"></div>
+        <div class="ring yellow"></div>
+        <div class="ring black"></div>
+        <div class="ring green"></div>
+        <div class="ring red"></div>
+    </div> -->
+
+</body>
+
+</html>

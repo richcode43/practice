@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    margin: 70px auto;
+    width: 900px;
+    height: auto;
+    border: 1px solid purple;
+    column-gap: 100px;
+    box-sizing: border-box;
+}
+
+.left {
+    background-image: url(bg-main-desktop.png);
+    padding: 100px;
+    width: 100px;
+    height: 350px;
+    align-items: center;
+    position: relative;
+}
+
+.card-front {
+    height: 170px;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    top: 120px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.circle1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 140px;
+    left: 120px;
+}
+
+.circle2 {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 1px solid white;
+    position: absolute;
+    top: 148px;
+    left: 160px;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 260px;
+    left: 120px;
+}
+
+.card-details>div {
+    margin: 6px;
+}
+
+.card-details div:nth-child(1) {
+    display: flex;
+}
+
+.card-details div:nth-child(1)>div {
+    margin-right: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.cardholder-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* .cardholder-details>p {
+    margin-left: 10px;
+} */
+
+.card-back {
+    height: 160px;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 80px;
+    left: 180px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cvv {
+    position: absolute;
+    color: white;
+    bottom: 155px;
+    right: -140px;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.right {
+    padding: 0 0 0 150px;
+}
+
+.right>form {
+    display: flex;
+    flex-direction: column;
+}
+
+.right form label {
+    font-variant: small-caps;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px 0 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.right form input {
+    padding: 5px;
+    border-radius: 5px;
+    border-color: rgba(128, 128, 128, 0.124);
+}
+
+::placeholder {
+    color: rgba(128, 128, 128, 0.607);
+    font-size: 11px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.date-details {
+    display: flex;
+    column-gap: 2px;
+}
+
+.date-details div {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-details div span {
+    display: flex;
+    flex-direction: row;
+}
+
+.date-details div span input {
+    width: 55px;
+    margin-right: 10px;
+}
+
+.date-details div:nth-child(2) input {
+    width: 120px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 8px;
+    background-color: hsl(279, 59%, 20%);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        display: block;
+        flex-direction: column;
+        margin: 0;
+        width: max-content;
+        width: fit-content;
+    }
+    .left {
+        width: fit-content;
+    }
+    .right {
+        width: fit-content;
+    }
+    .card-back {
+        left: 0;
+        /* position: fixed; */
+    }
+    .right {
+        padding: 0;
+    }
+    .left {
+        padding: 5px;
+        background-repeat: no-repeat;
+    }
+    form {
+        padding: 10px;
+        width: 100%;
+    }
+}

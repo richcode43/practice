@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        button {
+            margin-left: 5px;
+        }
+        
+        .house div {
+            float: left;
+        }
+        
+        .house>div:nth-child(2) {
+            margin-left: 40px;
+        }
+        
+        a:link {
+            color: red;
+        }
+        /* visited link */
+        
+        a:visited {
+            color: green;
+        }
+        /* mouse over link */
+        
+        a:hover {
+            color: hotpink;
+        }
+        /* selected link */
+        
+        a:active {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="default.asp" target="_blank">This is a link</a>
+    <div class="fixed">
+        This element is fixed
+    </div>
+    <div class="relative">
+
+    </div>
+    <div class="absolute"></div>
+    </div>
+    <p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+
+    <div class="sticky">I am sticky!</div>
+    <div style="background-color: coral;
+    width: 200px;
+    height: 65px;
+    border: 1px solid;
+    overflow: hidden;">You can use the overflow property when you want to have better control of the layout. The overflow property specifies what happens if content overflows an element's box.</div>
+    <br><br><br>
+    <div class="house">
+        <div class="row1"></div>
+        <div class="line1">
+            <button>Esc</button>
+            <button>F1</button>
+            <button>F2</button>
+            <button>F3</button>
+            <button>F4</button>
+            <button>F5</button>
+            <button>F6</button>
+            <button>F7</button>
+            <button>F8</button>
+            <button>F9</button>
+            <button>F10</button>
+            <button>F11</button>
+            <button>F12</button>
+            <button>Insect</button>
+            <button class="print">printScr</button>
+            <button>Delete</button>
+        </div>
+        <div class="line1">
+            <button>Esc</button>
+            <button>F1</button>
+            <button>F2</button>
+            <button>F3</button>
+            <button>F4</button>
+        </div>
+
+    </div>
+    <br><br>
+    <div class="goal-post">
+        <div class="goal"></div>
+        <hr style="background-color: blue;position:absolute;top:50px;width:100%">
+    </div><br>
+    <div style="border: 2px solid purple;height:20px;border-color: purple transparent transparent "></div>
+
+    <h2>display: inline</h2>
+    <div>
+        This class has been amazing so far. Most of the guy are catching on with the class,
+        <span class="a">unfortunately some</span>, not so fast. but <span class="a">eventually</span> they all will.
+    </div>
+
+    <h2>display: inline-block</h2>
+    <div>
+        This class has been amazing so far. Most of the guy are catching on with the class,
+        <span class="b">unfortunately some</span>, not so fast. but <span class="b">eventually</span> they all will.
+    </div>
+
+    <h2>display: block</h2>
+    <div>
+        This class has been amazing so far. Most of the guy are catching on with the class,
+        <span class="c">unfortunately some</span>, not so fast. but <span class="c">eventually</span> they all will.
+    </div>
+    <div class="auto">
+        <p>paragraph 1</p>
+        <p>paragraph 2</p>
+        <section>
+            <p>paragraph 3</p>
+        </section>
+        <p> this div is centered</p>
+
+    </div>
+    <p>outside paragraph</p>
+    <img src="music.jpg" alt="">
+</body>
+
+</html>

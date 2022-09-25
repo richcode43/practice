@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flexbox.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div>
+                <img class="card-front" src="bg-card-front.png" alt="">
+                <div>
+                    <div class="circle1"></div>
+                    <div class="circle2"></div>
+                </div>
+                <div>
+                    <div class="card-details">
+                        <div class="card-digits">
+                            <div>0000</div>
+                            <div>0000</div>
+                            <div>0000</div>
+                            <div>0000</div>
+                        </div>
+                        <div class="cardholder-details">
+                            <p>Jane Appleeseed</p>
+                            <p>00/00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img class="card-back" src="bg-card-back.png" alt="">
+                <div class="cvv">000</div>
+            </div>
+
+        </div>
+        <div class="right">
+            <form action="">
+
+                <label for="name">cardholder name</label>
+                <input type="text" placeholder="e.g. Jane Appleeseed">
+                <label for="number">Card number</label>
+                <input type="text" placeholder="e.g 000-00000-0000-00">
+                <div class="date-details">
+                    <div>
+                        <label for="">Exp date (mm/yy)</label>
+                        <span>
+                            <input type="text" placeholder="MM">
+                            <input type="text" placeholder="">
+                        </span>
+
+                    </div>
+                    <div>
+                        <label for=" ">cvc</label>
+                        <input type="text " placeholder="e.g 123 ">
+                    </div>
+                </div>
+                <button class="btn">Confirm</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
